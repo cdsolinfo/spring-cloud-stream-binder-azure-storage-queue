@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://schemas.cdsolutionsinfo.com/azure/storage-queue-message.json",
+  "type": "object",
+  "title": "The root schema",
+  "required": [
+    "topic",
+    "subject",
+    "eventType",
+    "id",
+    "data",
+    "dataVersion",
+    "metadataVersion",
+    "eventTime"
+  ],
+  "properties": {
+    "topic": {
+      "$id": "#/properties/topic",
+      "type": "string",
+      "title": "The topic schema"
+    },
+    "subject": {
+      "$id": "#/properties/subject",
+      "type": "string",
+      "title": "The subject schema"
+    },
+    "eventType": {
+      "$id": "#/properties/eventType",
+      "type": "string",
+      "title": "The eventType schema"
+    },
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string",
+      "title": "The id schema"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The data schema",
+      "required": [
+        "api",
+        "clientRequestId",
+        "requestId",
+        "eTag",
+        "contentType",
+        "contentLength",
+        "blobType",
+        "url",
+        "sequencer",
+        "storageDiagnostics"
+      ],
+      "properties": {
+        "api": {
+          "$id": "#/properties/data/properties/api",
+          "type": "string",
+          "title": "The api schema"
+        },
+        "clientRequestId": {
+          "$id": "#/properties/data/properties/clientRequestId",
+          "type": "string",
+          "title": "The clientRequestId schema"
+        },
+        "requestId": {
+          "$id": "#/properties/data/properties/requestId",
+          "type": "string",
+          "title": "The requestId schema"
+        },
+        "eTag": {
+          "$id": "#/properties/data/properties/eTag",
+          "type": "string",
+          "title": "The eTag schema"
+        },
+        "contentType": {
+          "$id": "#/properties/data/properties/contentType",
+          "type": "string",
+          "title": "The contentType schema"
+        },
+        "contentLength": {
+          "$id": "#/properties/data/properties/contentLength",
+          "type": "integer",
+          "title": "The contentLength schema"
+        },
+        "blobType": {
+          "$id": "#/properties/data/properties/blobType",
+          "type": "string",
+          "title": "The blobType schema"
+        },
+        "url": {
+          "$id": "#/properties/data/properties/url",
+          "type": "string",
+          "title": "The url schema"
+        },
+        "sequencer": {
+          "$id": "#/properties/data/properties/sequencer",
+          "type": "string",
+          "title": "The sequencer schema"
+        },
+        "storageDiagnostics": {
+          "$id": "#/properties/data/properties/storageDiagnostics",
+          "type": "object",
+          "title": "The storageDiagnostics schema",
+          "required": [
+            "batchId"
+          ],
+          "properties": {
+            "batchId": {
+              "$id": "#/properties/data/properties/storageDiagnostics/properties/batchId",
+              "type": "string",
+              "title": "The batchId schema"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "dataVersion": {
+      "$id": "#/properties/dataVersion",
+      "type": "string",
+      "title": "The dataVersion schema"
+    },
+    "metadataVersion": {
+      "$id": "#/properties/metadataVersion",
+      "type": "string",
+      "title": "The metadataVersion schema"
+    },
+    "eventTime": {
+      "$id": "#/properties/eventTime",
+      "type": "string",
+      "title": "The eventTime schema"
+    }
+  },
+  "additionalProperties": false
+}

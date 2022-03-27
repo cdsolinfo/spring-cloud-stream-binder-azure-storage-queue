@@ -1,0 +1,2 @@
+azurestoragequeue:\
+org.springframework.cloud.stream.binder.azure.storagequeue.config.AzureStorageQueueBinderConfiguration

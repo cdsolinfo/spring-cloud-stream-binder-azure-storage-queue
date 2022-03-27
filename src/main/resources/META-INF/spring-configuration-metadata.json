@@ -1,0 +1,16 @@
+{
+  "groups": [{
+    "name": "azure.storage",
+    "type": "org.springframework.cloud.stream.binder.azure.storagequeue.config.AzureStorageQueueConfigurationProperties",
+    "sourceType": "org.springframework.cloud.stream.binder.azure.storagequeue.config.AzureStorageQueueConfigurationProperties"
+  }],
+  "properties": [
+    {
+      "name": "connection",
+      "type": "java.lang.String",
+      "description": "Azure Storage Connection",
+      "sourceType": "org.springframework.cloud.stream.binder.azure.storagequeue.config.AzureStorageQueueConfigurationProperties"
+    }
+  ],
+  "hints": []
+}
